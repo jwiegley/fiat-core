@@ -105,3 +105,5 @@ web
 /src/QueryStructure/QuerySpecs/ConstraintCheckUnfoldings.v
 /src/QueryStructure/QuerySpecs/InsertQSRefinements.v
 /src/QueryStructure/Refinements/AdditionalListLemmas.v
+/CoqMakefile.conf
+/Makefile.coq-old.conf
