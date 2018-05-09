@@ -187,16 +187,6 @@ src/Computation/Refinements/Tactics.v
 src/ComputationalEnsembles/Core.v
 src/ComputationalEnsembles/Laws.v
 src/ComputationalEnsembles/Morphisms.v
-src/Examples/CacheADT/CacheADT.v
-src/Examples/CacheADT/CacheRefinements.v
-src/Examples/CacheADT/CacheSig.v
-src/Examples/CacheADT/CacheSpec.v
-src/Examples/CacheADT/FMapCacheImplementation.v
-src/Examples/CacheADT/KVEnsembles.v
-src/Examples/CacheADT/LRUCache.v
-src/Examples/Ics/Ics.v
-src/Examples/Ics/WaterTank.v
-src/Examples/Ics/WaterTankExtract.v
 src/FiniteSetADTs/BedrockWord.v
 src/FiniteSetADTs/FiniteSetADT.v
 src/FiniteSetADTs/FiniteSetADTImplementation.v
