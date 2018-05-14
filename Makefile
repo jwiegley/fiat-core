@@ -83,8 +83,7 @@ test-parsers-profile-graph: src/Parsers/Refinement/ExtractSharpenedABStar.vo
 CORE_UNMADE_VO := \
 	src/Common/ilist2.vo \
 	src/Common/ilist2_pair.vo \
-	src/Common/FMapExtensions/LiftRelationInstances.vo \
-	src/Common/FMapExtensions/Wf.vo
+	src/Common/FMapExtensions/LiftRelationInstances.vo
 
 FIAT4MONITORS_UNMADE_VO := \
 	src/Fiat4Monitors/HelloWorld/%.vo \
