@@ -92,12 +92,8 @@ FIAT4MONITORS_UNMADE_VO := \
 	src/Fiat4Monitors/TurretMonitorSpec.vo \
 	src/Fiat4Monitors/MonitorRepInv.vo
 
-EXTRACTION_UNMADE_VO := \
-	src/CertifiedExtraction/Benchmarks/DNS.vo \
-
 FIAT_CORE_VO := $(filter-out $(CORE_UNMADE_VO),$(filter src/Computation.vo src/ADT.vo src/ADTInduction.vo src/ADTNotation.vo src/ADTRefinement.vo src/Common.vo src/Computation/%.vo src/ADT/%.vo src/ADTNotation/%.vo src/ADTRefinement/%.vo src/Common/%.vo,$(VOFILES)))
 FINITESET_VO := $(filter src/FiniteSetADTs.vo src/FiniteSetADTs/%.vo,$(VOFILES))
-EXTRACTION_VO := $(filter-out $(EXTRACTION_UNMADE_VO),$(filter src/CertifiedExtraction/%.vo,$(VOFILES)))
 FIAT4MONITORS_VO := $(filter-out $(FIAT4MONITORS_UNMADE_VO), $(filter src/Fiat4Monitors/%.vo,$(VOFILES)))
 NARCISSUS_VO := $(filter-out $(NARCISSUS_UNMADE_VO), $(filter src/Narcissus/%.vo,$(VOFILES)))
 
@@ -107,7 +103,6 @@ TACTICS_TARGETS := $(filter src/Common/Tactics/%,$(CMOFILES) $(if $(HASNATDYNLIN
 fiat: $(FIAT_VO) $(TACTICS_TARGETS)
 fiat-core: $(FIAT_CORE_VO) $(TACTICS_TARGETS)
 finitesets: $(FINITESETS_VO)
-extraction: $(EXTRACTION_VO)
 facade-test: $(FACADE_TEST_VO)
 ics: $(ICS_VO)
 tutorial: $(TUTORIAL_VO)
